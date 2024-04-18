@@ -1,0 +1,25 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Language System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="static/style.css">
+</head>
+<body style="background-image:url('static/images/bg-2.jpg'); background-repeat: no-repeat; background-size: cover;">
+<div class="container-1">
+    <h1 class="text-primary">Sign Language System</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="image" class="badge text-primary">Upload American Sign Language Image or Phrase:</label>
+            <input type="file" name="image" id="image" accept="image/*" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

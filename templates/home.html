@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Sign language learning System</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='custom.css') }}"
+    />
+    
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='assets/vendor/remixicon/remixicon.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}"
+    />
+
+    <!-- Template Main CSS File -->
+    <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
+
+    <!-- =======================================================
+  * Template Name: FlexStart
+  * Updated: Jun 19 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="" />
+          <span>SLLS</span>
+        </a>
+
+        <nav id="navbar" class="navbar">
+          <ul style="text-decoration: none !important;">
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
+            <!-- <li><a class="nav-link scrollto" href="/register">Register</a></li> -->
+            <!-- <li><a class="nav-link scrollto" href="/upload_sign">Explore Sign language</a></li> -->
+            <li><a class="nav-link scrollto" href="/tinybert_form">Tiny Bert</a></li>
+            <ul>
+          <li><a class="nav-link scrollto" href="#alphabets">Alphabets</a></li> 
+          <li><a class="nav-link scrollto" href="#phrases">Phrases</a></li> 
+
+            </ul>
+            <li>
+              <a class="getstarted scrollto" href="#about">Get Started</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <h1 data-aos="fade-up">
+              Sign Language Learning System 
+            </h1>
+            <h2 data-aos="fade-up" data-aos-delay="400">
+             
+             
+            </h2>
+            <p>A sign language Learning system is a method or platform designed whereby individual can learn to communicate using sign. However is a mechanisms to help learners improve their signing proficiency. 
+              The system aim to provide structure lesson to help users develop proficiency in sign language.</p>
+            <div data-aos="fade-up" data-aos-delay="600">
+              <div class="text-center text-lg-start">
+                <a
+                  href="#about"
+                  class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center"
+                >
+                  <span>Get Started</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 hero-img"
+            data-aos="zoom-out"
+            data-aos-delay="200"
+          >
+            <img src="{{ url_for('static', filename='assets/img/sig.jpg') }}" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about" style="background: #f2f2f2;">
+        <div class="container" data-aos="fade-up">
+          <div class="row gx-0">
+            <div
+              class="col-lg-6 d-flex flex-column justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="content">
+                <h3>About me</h3>
+                <h2>
+                 I am <b>TALUT AMINU ADINOYI</b> 
+                </h2>
+                <p>
+                  A Student of Bayero University Kano, Faculty of Computing <b>Department of Software
+                  Engineering</b> this is my final year project<b>Sign Language Learning System</b>.
+                </p>
+                <div class="text-center text-lg-start">
+                  <a
+                    href="#"
+                    class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center"
+                  >
+                    <span>Read More</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-6 d-flex align-items-center"
+              data-aos="zoom-out"
+              data-aos-delay="200"
+            >
+              <img src="{{ url_for('static', filename='assets/img/infor-3.png') }}" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <!-- End About Section -->
+      </div>
+
+     
+
+      <section id="alphabets">
+        <h6 class="text-primary text-center fs-2 fw-bold">ALPHABETS</h6>
+        <div class="container ">
+          <div class="accordion " id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  A
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/A/A.png') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+                  The ASL letter A is formed by making a closed fist with the thumb resting against the fingers. The fist is then rotated forward from the wrist.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  B
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/B/B.png') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+
+                  The ASL letter B is formed by extending the thumb and index finger outward while keeping the other fingers curled into a fist.
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                 C
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/C/C.PNG') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+                  The ASL letter C is formed by making a fist and extending the index finger, which is then bent at the knuckle.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                 D
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/D/D.PNG') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+                  The ASL letter D is formed by making a fist and extending the index finger and middle finger, while keeping the other fingers curled into a fist.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                 E
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/E/E.PNG') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+                  The ASL letter E is formed by extending all fingers and thumb and holding them together in a flat, open-hand shape.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                 F
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/F/F.PNG') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" /> 
+                  The ASL letter F is formed by making a fist and extending the index and middle fingers, while tucking the thumb under the fingers.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                 G
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/G/G.PNG') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+                
+                  The ASL letter G is formed by making a fist and extending the little finger, while keeping the other fingers curled into a fist.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                 H
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/H/H.PNG') }}" class="img-fluid" alt="" style="max-width: 80px;
+                  max-height: auto;" />
+                  The ASL letter H is formed by making a fist and extending the index finger and little finger, while keeping the other fingers curled into a fist.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                 I
+                </button>
+              </h2>
+              <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/I/I.PNG') }}" class="img-fluid" alt="" style="max-width: 80px;
+                  max-height: auto;" />
+                  The ASL letter I is formed by extending the index finger upward.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen"
+                 aria-expanded="false" aria-controls="collapseTen">
+                 J
+                </button>
+              </h2>
+              <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/J/J.PNG') }}" class="img-fluid" alt="" style="max-width: 80px;
+                  max-height: auto;" />
+                  The ASL letter J is formed by making a fist and extending the little finger upward.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEleven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" 
+                aria-expanded="false" aria-controls="collapseEleven">
+                 K
+                </button>
+              </h2>
+              <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/K/K.PNG') }}" class="img-fluid" alt="" style="max-width: 80px;
+                  max-height: auto;" />
+                  The ASL letter J is formed by making a fist and extending the little finger upward.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwelve">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                 L
+                </button>
+              </h2>
+              <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/L/L.png') }}" class="img-fluid" alt="" style="max-width: 80px;
+                  max-height: auto;" />
+                  The ASL letter K is formed by making a fist and extending the index finger and middle finger, while keeping the other fingers curled into a fist, then extending the thumb outward.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThirtheen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirtheen" aria-expanded="false" aria-controls="collapseThirtheen">
+                 M
+                </button>
+              </h2>
+              <div id="collapseThirtheen" class="accordion-collapse collapse" aria-labelledby="headingThirtheen" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/M/M.png') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+                  The ASL letter L is formed by making a fist and extending the index finger and middle finger, while keeping the other fingers curled into a fist.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFourteen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                 N
+                </button>
+              </h2>
+              <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/N/N.png') }}" class="img-fluid" alt="" style="max-width: 80px;
+                  max-height: auto;" />
+                  The ASL letter N is formed by making a fist and extending the index finger, middle finger, and ring finger, while keeping the other fingers curled into a fist.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFifteen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen"
+                aria-expanded="false" aria-controls="collapseFifteen">
+                 O
+                </button>
+              </h2>
+              <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/O/O.png') }}" class="img-fluid" alt="" style="max-width: 80px;
+                  max-height: auto;" />
+                  The ASL letter O is formed by making a circle with the thumb and index finger.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSixteen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                 P
+                </button>
+              </h2>
+              <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/P/P.png') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+                  The ASL letter P is formed by making a fist and extending the thumb and little finger, while keeping the other fingers curled into a fist.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeventeen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                 Q
+                </button>
+              </h2>
+              <div id="collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="headingSeventeen" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/Q/Q.png') }}" class="img-fluid" alt="" style="max-width: 80px;
+                  max-height: auto;" />
+                  The ASL letter Q is formed by making a fist and extending the thumb and index finger, while keeping the other fingers curled into a fist.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEighteen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+                 R
+                </button>
+              </h2>
+              <div id="collapseEighteen" class="accordion-collapse collapse" aria-labelledby="headingEighteen" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/R/R.png') }}" class="img-fluid" alt="" style="max-width: 80px;
+                  max-height: auto;" />
+                  The ASL letter R is formed by making a fist and extending the index finger and middle finger, while keeping the other fingers curled into a fist, then moving the extended fingers back and forth.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingNineteen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+                 S
+                </button>
+              </h2>
+              <div id="collapseNineteen" class="accordion-collapse collapse" aria-labelledby="headingNineteen" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/S/S.png') }}" class="img-fluid" alt="" style="max-width: 80px;
+                  max-height: auto;" />
+                  The ASL letter S is formed by making a fist and extending the index finger, while keeping the other fingers curled into a fist, then moving the extended finger in a zigzag motion.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwenty">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwenty" 
+                aria-expanded="false" aria-controls="collapseTwenty">
+                 T
+                </button>
+              </h2>
+              <div id="collapseTwenty" class="accordion-collapse collapse" aria-labelledby="headingTwenty" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/T/T.png') }}" class="img-fluid" alt="" style="max-width: 80px;
+                  max-height: auto;" />
+                  The ASL letter T is formed by making a fist and extending the index finger upward, then tapping the thumb against the index finger.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwentyOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyOne" 
+                aria-expanded="false" aria-controls="collapseTwentyOne">
+                 U
+                </button>
+              </h2>
+              <div id="collapseTwentyOne" class="accordion-collapse collapse" aria-labelledby="headingTwentyOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/U/U.png') }}" class="img-fluid" alt="" style="max-width: 80px;
+                  max-height: auto;" />
+                  The ASL letter U is formed by making a fist and extending the index finger and middle finger, while keeping the other fingers curled into a fist, then separating the two extended fingers slightly.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwentyTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyTwo" aria-expanded="false" aria-controls="collapseTwentyTwo">
+                 V
+                </button>
+              </h2>
+              <div id="collapseTwentyTwo" class="accordion-collapse collapse" aria-labelledby="headingTwentyTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/V/V.png') }}" class="img-fluid" alt="" style="max-width: 80px;
+                  max-height: auto;" />
+                  The ASL letter V is formed by making a fist and extending the index finger and middle finger, while keeping the other fingers curled into a fist, then separating the two extended fingers widely.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwentyThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyThree" aria-expanded="false" aria-controls="collapseTwentyThree">
+                 W
+                </button>
+              </h2>
+              <div id="collapseTwentyThree" class="accordion-collapse collapse" aria-labelledby="headingTwentyThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/W/W.png') }}" class="img-fluid" alt="" style="max-width: 80px;
+                  max-height: auto;" />
+                  The ASL letter W is formed by making a fist and extending the index finger and middle finger, while keeping the other fingers curled into a fist, then separating the two extended fingers slightly and moving them outward and back in.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwentyFour">
+                <button class="accordion-button collapsed" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapseTwentyFour" 
+                aria-expanded="false" aria-controls="collapseTwentyFour">
+                 X
+                </button>
+              </h2>
+              <div id="collapseTwentyFour" class="accordion-collapse collapse" 
+              aria-labelledby="headingTwentyFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/X/X.png') }}" class="img-fluid" alt="" style="max-width: 80px;
+                  max-height: auto;" />
+                  The ASL letter X is formed by making a fist and crossing the index finger and middle finger over each other.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwentyFive">
+                <button class="accordion-button collapsed" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapseTwentyFive" 
+                aria-expanded="false" aria-controls="collapseTwentyFive">
+                 Y
+                </button>
+              </h2>
+              <div id="collapseTwentyFive" class="accordion-collapse collapse" 
+              aria-labelledby="headingTwentyFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/Y/Y.png') }}" class="img-fluid" alt="" style="max-width: 80px;
+                  max-height: auto;" />
+                  The ASL letter Y is formed by making a fist and extending the index finger and little finger, while keeping the other fingers curled into a fist, then separating the two extended fingers widely.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwentySix">
+                <button class="accordion-button collapsed" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapseTwentySix" 
+                aria-expanded="false" aria-controls="collapseTwentySix">
+                 Z
+                </button>
+              </h2>
+              <div id="collapseTwentySix" class="accordion-collapse collapse" aria-labelledby="headingTwentySix" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/Z/Z.png') }}" class="img-fluid" alt="" style="max-width: 80px;
+                  max-height: auto;" />
+                  The ASL letter Z is formed by making a fist and extending the index finger and middle finger, while keeping the other fingers curled into a fist, then tracing a zigzag pattern in the air with the extended fingers.
+                </div>
+              </div>
+            </div>
+
+          </div>
+      </section>
+
+      <section id="phrases">
+      <h6 class="text-primary text-center fs-2 fw-bold">PHRASES</h6>
+        <div class="container ">
+          <div class="accordion " id="accordionExample">
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Good Morning
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/Good Morning/Good Morning.png') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+                  <!-- Good Morning -->
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapseTwo" 
+                aria-expanded="false" aria-controls="collapseTwo">
+                  Good Afternoon
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" 
+              aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                <img src="{{ url_for('static', filename='gesture_images/Good Afternoon/Good Afternoon.png') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+
+                  <!-- Good Afternoon -->
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapseThree" 
+                aria-expanded="false" aria-controls="collapseThree">
+                  Good Night
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" 
+              aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/Good Night/Good Night.png') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+
+                  <!-- Good Night -->
+                  
+                </div>
+              </div>
+            </div>
+            
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapseFour" 
+                aria-expanded="false" aria-controls="collapseThree">
+                  Hi
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" 
+              aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/Hi/Hi.png') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+                  <!-- Hi  -->
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapseFive" 
+                aria-expanded="false" aria-controls="collapseFive">
+                  Hello
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" 
+              aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                <img src="{{ url_for('static', filename='gesture_images/Hello/Hello.png') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+                  <!-- Hello -->
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapseSix" 
+                aria-expanded="false" aria-controls="collapseSix">
+                  Nice to Meet you
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" 
+              aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/Nice to meet you/Nice to meet you.png') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+                  <!-- Hello -->
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapseSeven" 
+                aria-expanded="false" aria-controls="collapseSeven">
+                  Am Less Concerned
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" 
+              aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/Am less concern/Am Less Concern.png') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+                  <!-- Hi  -->
+                </div>
+              </div>
+            </div>
+             
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapseEight" 
+                aria-expanded="false" aria-controls="collapseEight">
+                 Pls stop 
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" 
+              aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/Pls stop/Pls stop.png') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingNine">
+                <button class="accordion-button collapsed" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapseNine" 
+                aria-expanded="false" aria-controls="collapseNine">
+                 I Dont No
+                </button>
+              </h2>
+              <div id="collapseNine" class="accordion-collapse collapse" 
+              aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/I dont no/I dont no.png') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTen">
+                <button class="accordion-button collapsed" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapseTen" 
+                aria-expanded="false" aria-controls="collapseTen">
+                 I Cherished You. 
+                </button>
+              </h2>
+              <div id="collapseTen" class="accordion-collapse collapse" 
+              aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/I Cherish you/I Cherish you.png') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEleven">
+                <button class="accordion-button collapsed" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapseEleven" 
+                aria-expanded="false" aria-controls="collapseEleven">
+                You Welcome. 
+                </button>
+              </h2>
+              <div id="collapseEleven" class="accordion-collapse collapse" 
+              aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="{{ url_for('static', filename='gesture_images/You Welcome/You Welcome.png') }}" class="img-fluid" alt="" style="max-width: 80px; max-height: auto;" />
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+      </section>
+
+     
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            
+            
+            
+            
+
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Amtal  2024</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">Amtal</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+<!-- Vendor JS Files -->
+<script src="{{ url_for('static', filename='assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js') }}"></script>
+
+<!-- Template Main JS File -->
+<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Language System - Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body style="background-image:url('static/images/02.jpg');">
+<div class="container">
+    <h1>Sign Language System - Result</h1>
+    <div class="modal-content">
+        <h2>Prediction:</h2>
+        <p>{{ prediction }}</p>
+        <img src="{{ url_for('static', filename='gesture_images/' + prediction + '.png') }}" class="gesture-image" alt="Sign Language Gesture">
+    </div>
+</div>
+</body>
+</html>
